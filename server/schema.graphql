@@ -1,0 +1,5 @@
+type Stock { symbol: String!, price: Float, changePct: Float, sector: String }
+input StockFilter { sector: String, query: String }
+type Query { stocks(filter: StockFilter): [Stock] }
+type Subscription { stockUpdated: Stock }
+schema { query: Query, subscription: Subscription }
