@@ -1,0 +1,5 @@
+{
+  "name": "stock-heatmap-backend",
+  "version": "0.1.0",
+  "scripts": { "start": "node index.js" }
+}
