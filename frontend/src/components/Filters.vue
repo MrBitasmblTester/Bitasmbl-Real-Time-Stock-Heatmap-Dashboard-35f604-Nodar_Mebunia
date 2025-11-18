@@ -1,0 +1,2 @@
+<template><div><select v-model="sector" @change="emit"><option value="">All</option><option>Technology</option><option>Finance</option></select><input v-model="query" @input="emit" placeholder="Search"/></div></template>
+<script>export default { data(){return{sector:'',query:''}}, methods:{ emit(){this.$emit('update',{sector:this.sector,query:this.query}) } } }</script>
